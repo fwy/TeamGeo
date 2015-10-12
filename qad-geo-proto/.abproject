@@ -1,0 +1,45 @@
+{
+	"ProjectName": "qad-geo-proto",
+	"ProjectGuid": "{867300cc-fc95-409d-addc-c63022104711}",
+	"projectVersion": 1,
+	"AppIdentifier": "com.telerik.qadgeoproto",
+	"DisplayName": "qad-geo-proto",
+	"Author": "",
+	"Description": "qad-geo-proto",
+	"BundleVersion": "1.0",
+	"AndroidVersionCode": "1",
+	"iOSDeviceFamily": [
+		"1",
+		"2"
+	],
+	"iOSBackgroundMode": [],
+	"ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+	"FrameworkVersion": "3.7.0",
+	"AndroidPermissions": [
+		"android.permission.INTERNET"
+	],
+	"DeviceOrientations": [
+		"Portrait",
+		"Landscape"
+	],
+	"AndroidHardwareAcceleration": "false",
+	"iOSStatusBarStyle": "Default",
+	"Framework": "Cordova",
+	"WP8TileTitle": "",
+	"WP8Publisher": "",
+	"WP8Capabilities": [
+		"ID_CAP_NETWORKING",
+		"ID_CAP_WEBBROWSERCOMPONENT"
+	],
+	"WP8Requirements": [],
+	"WP8PublisherID": "{1c51a80a-f311-4a86-8566-ae9bb17a1098}",
+	"WP8ProductID": "{bfd21f54-2113-4837-adcc-b1abb5daaf03}",
+	"WPSdk": "8.0",
+	"WP8PackageIdentityName": "1234Telerik.com.telerik.qadgeoproto",
+	"WP8WindowsPublisherName": "CN=Telerik",
+	"WP8SupportedResolutions": [
+		"ID_RESOLUTION_WVGA",
+		"ID_RESOLUTION_WXGA",
+		"ID_RESOLUTION_HD720P"
+	]
+}
