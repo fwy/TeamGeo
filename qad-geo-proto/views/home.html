@@ -1,7 +1,43 @@
-<kendo-mobile-view k-title="'Home'" k-layout="'main'" ng-controller="homeController">
-    <h1>{{title}}</h1>
+<kendo-mobile-view
+    k-title="'Order Shipment Activity'"
+    k-layout="'main'"
+    ng-controller="homeController"
+    >
+    <div style="position: absolute; left: 50%; transform: translateX(-50%);">
+        <br/><br/>
+	    <label style="text-align: left; width: 130px;">Ship-From Site: </label>
+	    <kendo-drop-down-list
+	        k-scope-field="shipFromDropDown"
+	        k-data-source="dataSources.shipFromSites"
+	        k-data-value-field="'siteCode'"
+            k-data-text-field="'siteCode'"
+	        k-option-label="'Select a site...'"
+	        >
+	    </kendo-drop-down-list>
+	    <br/><br/>
+        <label style="text-align: left; width: 130px;">Due Date From: </label>
+        <!-- TODO Change date picker to tag directive after upgrade to KendoUI 2015.3.930 -->
+	    <input kendo-date-picker="beginDueDatePicker"
+	       k-min="lowDueDate"
+	       k-max="highDueDate"
+	       k-on-change="resetEndDateRange(kendoEvent)"
+	       >
+	    </kendo-date-picker>
+	    <br/><br/>
+	    <label style="text-align: left; width: 130px;">Due Date To: </label>
+        <!-- TODO Change date picker to tag directive after upgrade to KendoUI 2015.3.930 -->
+        <input kendo-date-picker="endDueDatePicker"
+           k-min="lowDueDate"
+           k-max="highDueDate"
+           k-on-change="resetBeginDateRange(kendoEvent)"
+           >
+        </kendo-date-picker>
+        <br/><br/><br/><br/>
+        <kendo-mobile-button
+            k-on-click="processSearchRequest(kendoEvent)"
+            href="views/map.html"
+            style="position: absolute; left: 50%; transform: translateX(-50%);"
+            >Search
+        </kendo-mobile-button>
+    </div>
 </kendo-mobile-view>
-
-<!-- <div data-role="view" data-title="Home" data-layout="main" data-model="APP.models.home"> -->
-<!--   <h1 data-bind="html: title"></h1> -->
-<!-- </div> -->

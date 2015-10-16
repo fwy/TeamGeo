@@ -1,0 +1,11 @@
+<kendo-mobile-view 
+    k-layout="'main'" 
+    style="position: relative;"
+    ng-controller="orderListController"
+    >
+    <kendo-mobile-list-view id="shipToDetails"
+        k-data-source="dataSources.shipToDataSource"
+        k-template="orderLineTemplate"
+        >
+    </kendo-mobile-list-view>
+</kendo-mobile-view>

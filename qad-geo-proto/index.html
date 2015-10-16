@@ -20,9 +20,19 @@
 
     <script src="scripts/mobileUtils.js"></script>
     <script src="scripts/app.js"></script>
-
+    <script src="scripts/dataSources.js"></script>
+    <script src="scripts/home.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="scripts/orderList.js"></script>
 </head>
-<body kendo-mobile-application k-hash-bang="true" ng-app="geoProto">
+
+<body kendo-mobile-application 
+    k-hash-bang="true" 
+    k-transition="'slide'" 
+    k-initial="'views/home.html'" 
+    k-loading="'<h1></h1>'"
+    ng-app="geoProto"
+    >
  
     <kendo-mobile-layout k-id="'main'">
         <kendo-mobile-header>
@@ -32,27 +42,13 @@
         </kendo-mobile-header>
 
         <!-- Application views will be rendered here -->
-        
+
         <kendo-mobile-footer>
             <kendo-mobile-tab-strip>
                 <a href="views/home.html" data-icon="home">Home</a>   
             </kendo-mobile-tab-strip>
         </kendo-mobile-footer>
     </div>
- 
-    <!-- <div data-role="layout" data-id="main"> -->
-    <!--     <div data-role="header"> -->
-    <!--         <div data-role="navbar"> -->
-    <!--             <span data-role="view-title"></span> -->
-    <!--         </div> -->
-    <!--     </div> -->
-        
-    <!--     <div data-role="footer"> -->
-    <!--         <div data-role="tabstrip"> -->
-    <!--             <a href="views/home.html" data-icon="home">Home</a> -->   
-    <!--         </div> -->
-    <!--     </div> -->
-    <!-- </div> -->
 
 </body>
 </html>
