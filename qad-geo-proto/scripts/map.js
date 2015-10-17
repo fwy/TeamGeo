@@ -2,7 +2,7 @@ app.angular
 	.controller("mapController", ["$scope", "dataSources", function($scope, dataSources) {
 		// Set map extent to cover all desired locations
 		var centerMapOnLocations = function(locations) {
-            var extent;
+            var extent = null;
 			// Include each location in extent
 			for (var i = 0; i < locations.length; i++) {
 	            if (!extent) {
@@ -34,13 +34,13 @@ app.angular
 				shape: "pin",
 				dataSource: dataSources.shipToDataSource,
 				tooltip: {
-					template: "<span>Ship-from: #=marker.dataItem.addressCode#<br/>" +
-						"#=marker.dataItem.addressName#</span>",
-//					template: "<span>Ship-to: #=marker.dataItem.addressCode#<br/>" +
-//						"#=marker.dataItem.addressName#<br/>" +
-//						"Order line: #=marker.dataItem.orderNbr# #=marker.dataItem.orderLine#<br/>" +
-//						"Due date: #=marker.dataItem.orderLineDueDate#<br/>" +
-//						"Total amount: #=kendo.toString(marker.dataItem.orderLineExtPrice, 'c')#</span>",
+					template: "<span>Ship-to: #=marker.dataItem.so_ship#<br/>" +
+						"#=marker.dataItem.ad_name_dest#</span>",
+//					template: "<span>Ship-to: #=marker.dataItem.so_ship#<br/>" +
+//						"#=marker.dataItem.ad_name_dest#<br/>" +
+//						"Order line: #=marker.dataItem.so_nbr# #=marker.dataItem.sod_line#<br/>" +
+//						"Due date: #=marker.dataItem.sod_due_date#<br/>" +
+//						"Total amount: #=kendo.toString(marker.dataItem.extendedPrice, 'c')#</span>",
 				}
 		};
 
@@ -62,13 +62,10 @@ app.angular
 					attribution: "&copy; <a href='http://osm.org/copyright'>OpenStreetMap contributors</a>.",
 				},
 				marker: {
-					locationField: "location",
-					titleField: "addressCode",
 				},
 				shape: {
 				},
 				bubble: {
-					// TODO
 				},
 		};
 
@@ -87,25 +84,28 @@ app.angular
 			var shipToMarkerLayer = map.layers[2];
 			var shapeLayer = map.layers[3];
 
-			var shipFromLocation = shipFromMarkerLayer.items[0].location();
-			// Convert ship-from location to screen coordinates
-			var from = map.locationToView(shipFromLocation);
-			var shipTos = shipToMarkerLayer.items;
-			for (var i = 0; i < shipTos.length; i++) {
-				var shipToLocation = shipTos[i].location();
-				// Convert ship-to location to screen coordinates
-				var to = map.locationToView(shipToLocation);
+			if (shipFromMarkerLayer.items.length > 0 && shipToMarkerLayer.items.length > 0) {
+				var shipFromLocation = shipFromMarkerLayer.items[0].location();
+				// Convert ship-from location to screen coordinates
+				var from = map.locationToView(shipFromLocation);
+				var shipTos = shipToMarkerLayer.items;
+				for (var i = 0; i < shipTos.length; i++) {
+					// Convert ship-to latitude-longitude to screen coordinates
+					var shipTo = shipTos[i].dataItem;
+					var shipToLocation = new kendo.dataviz.map.Location(shipTo.destLatitude, shipTo.destLongitude);
+					var to = map.locationToView(shipToLocation);
 
-				// Draw path from shipFrom to shipTo
-				var line = new kendo.dataviz.drawing.Path({
-					stroke: {
-						color: "#e15613", // Same color as marker
-						width: 2,
-						lineCap: "round",
-					}
-				});
-				line.moveTo(from).lineTo(to);
-				shapeLayer.surface.draw(line);
+					// Draw path from shipFrom to shipTo
+					var line = new kendo.dataviz.drawing.Path({
+						stroke: {
+							color: "#e15613", // Same color as marker
+							width: 2,
+							lineCap: "round",
+						}
+					});
+					line.moveTo(from).lineTo(to);
+					shapeLayer.surface.draw(line);
+				}
 			}
 		};
 

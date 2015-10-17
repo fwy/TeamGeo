@@ -1,0 +1,269 @@
+{
+    "data": [
+        {
+            "addressCode": "10-100",
+            "addressName": "QMI -USA Division",
+            "location": [40.824504, -74.362651]
+        },
+        {
+            "addressCode": "10-200",
+            "addressName": "QMI -USA Division",
+            "location": [40.824504, -74.362651]
+        },
+        {
+            "addressCode": "10-202",
+            "addressName": "QMI -USA Division",
+            "location": [40.824504, -74.362651]
+        },
+        {
+            "addressCode": "10-300",
+            "addressName": "QMI -USA Division",
+            "location": [40.824504, -74.362651]
+        },
+        {
+            "addressCode": "10-301",
+            "addressName": "QMI -USA Division",
+            "location": [40.824504, -74.362651]
+        },
+        {
+            "addressCode": "10-302",
+            "addressName": "QMI -USA Division",
+            "location": [40.824504, -74.362651]
+        },
+        {
+            "addressCode": "10-400",
+            "addressName": "QMI -USA Division",
+            "location": [40.824504, -74.362651]
+        },
+        {
+            "addressCode": "10-500",
+            "addressName": "QMI -USA Division",
+            "location": [40.824504, -74.362651]
+        },
+        {
+            "addressCode": "11-100",
+            "addressName": "QMI- Canada Division",
+            "location": [53.615423, -113.410792]
+        },
+        {
+            "addressCode": "11-200",
+            "addressName": "QMI- Canada Division",
+            "location": [53.615423, -113.410792]
+        },
+        {
+            "addressCode": "11-300",
+            "addressName": "QMI- Canada Division",
+            "location": [53.615423, -113.410792]
+        },
+        {
+            "addressCode": "11-400",
+            "addressName": "QMI- Canada Division",
+            "location": [53.615423, -113.410792]
+        },
+        {
+            "addressCode": "11-500",
+            "addressName": "QMI- Canada Division",
+            "location": [53.615423, -113.410792]
+        },
+        {
+            "addressCode": "12-100",
+            "addressName": "QMI- Mexico Division",
+            "location": [19.3232, -98.957782]
+        },
+        {
+            "addressCode": "12-200",
+            "addressName": "QMI- Mexico Division",
+            "location": [19.3232, -98.957782]
+        },
+        {
+            "addressCode": "12-300",
+            "addressName": "QMI- Mexico Division",
+            "location": [19.3232, -98.957782]
+        },
+        {
+            "addressCode": "12-400",
+            "addressName": "QMI- Mexico Division",
+            "location": [19.3232, -98.957782]
+        },
+        {
+            "addressCode": "12-500",
+            "addressName": "QMI- Mexico Division",
+            "location": [19.3232, -98.957782]
+        },
+        {
+            "addressCode": "20-100",
+            "addressName": "QMI-France Division",
+            "location": [48.876201, 2.289443]
+        },
+        {
+            "addressCode": "20-200",
+            "addressName": "QMI-France Division",
+            "location": [48.876201, 2.289443]
+        },
+        {
+            "addressCode": "20-300",
+            "addressName": "QMI-France Division",
+            "location": [48.876201, 2.289443]
+        },
+        {
+            "addressCode": "20-400",
+            "addressName": "QMI-France Division",
+            "location": [48.876201, 2.289443]
+        },
+        {
+            "addressCode": "20-500",
+            "addressName": "QMI-France Division",
+            "location": [48.876201, 2.289443]
+        },
+        {
+            "addressCode": "21-100",
+            "addressName": "QMI-Netherlands Division",
+            "location": [53.117979, 6.077707]
+        },
+        {
+            "addressCode": "21-200",
+            "addressName": "QMI-Netherlands Division",
+            "location": [53.117979, 6.077707]
+        },
+        {
+            "addressCode": "21-300",
+            "addressName": "QMI-Netherlands Division",
+            "location": [53.117979, 6.077707]
+        },
+        {
+            "addressCode": "21-400",
+            "addressName": "QMI-Netherlands Division",
+            "location": [53.117979, 6.077707]
+        },
+        {
+            "addressCode": "21-500",
+            "addressName": "QMI-Netherlands Division",
+            "location": [53.117979, 6.077707]
+        },
+        {
+            "addressCode": "22-100",
+            "addressName": "QMI-UK Division",
+            "location": [51.601637, 0.648379]
+        },
+        {
+            "addressCode": "22-200",
+            "addressName": "QMI-UK Division",
+            "location": [51.601637, 0.648379]
+        },
+        {
+            "addressCode": "22-300",
+            "addressName": "QMI-UK Division",
+            "location": [51.601637, 0.648379]
+        },
+        {
+            "addressCode": "22-400",
+            "addressName": "QMI-UK Division",
+            "location": [51.601637, 0.648379]
+        },
+        {
+            "addressCode": "22-500",
+            "addressName": "QMI-UK Division",
+            "location": [51.601637, 0.648379]
+        },
+        {
+            "addressCode": "23-100",
+            "addressName": "QMI German Division",
+            "location": [50.096454, 8.665523]
+        },
+        {
+            "addressCode": "23-200",
+            "addressName": "QMI German Division",
+            "location": [50.096454, 8.665523]
+        },
+        {
+            "addressCode": "23-300",
+            "addressName": "QMI German Division",
+            "location": [50.096454, 8.665523]
+        },
+        {
+            "addressCode": "23-400",
+            "addressName": "QMI German Division",
+            "location": [50.096454, 8.665523]
+        },
+        {
+            "addressCode": "23-500",
+            "addressName": "QMI German Division",
+            "location": [50.096454, 8.665523]
+        },
+        {
+            "addressCode": "30-100",
+            "addressName": "QMI-China Division",
+            "location": [31.024942, 121.446744]
+        },
+        {
+            "addressCode": "30-200",
+            "addressName": "QMI-China Division",
+            "location": [31.024942, 121.446744]
+        },
+        {
+            "addressCode": "30-300",
+            "addressName": "QMI-China Division",
+            "location": [31.024942, 121.446744]
+        },
+        {
+            "addressCode": "30-400",
+            "addressName": "QMI-China Division",
+            "location": [31.024942, 121.446744]
+        },
+        {
+            "addressCode": "30-500",
+            "addressName": "QMI-China Division",
+            "location": [31.024942, 121.446744]
+        },
+        {
+            "addressCode": "31-100",
+            "addressName": "QMI-Australia Division",
+            "location": [-33.862492, 151.209105]
+        },
+        {
+            "addressCode": "31-200",
+            "addressName": "QMI-Australia Division",
+            "location": [-33.862492, 151.209105]
+        },
+        {
+            "addressCode": "31-300",
+            "addressName": "QMI-Australia Division",
+            "location": [-33.862492, 151.209105]
+        },
+        {
+            "addressCode": "31-400",
+            "addressName": "QMI-Australia Division",
+            "location": [-33.862492, 151.209105]
+        },
+        {
+            "addressCode": "31-500",
+            "addressName": "QMI-Australia Division",
+            "location": [-33.862492, 151.209105]
+        },
+        {
+            "addressCode": "40-100",
+            "addressName": "QMI - Brazil Division",
+            "location": [-23.603412, -46.636637]
+        },
+        {
+            "addressCode": "40-200",
+            "addressName": "QMI - Brazil Division",
+            "location": [-23.603412, -46.636637]
+        },
+        {
+            "addressCode": "40-300",
+            "addressName": "QMI - Brazil Division",
+            "location": [-23.603412, -46.636637]
+        },
+        {
+            "addressCode": "40-400",
+            "addressName": "QMI - Brazil Division",
+            "location": [-23.603412, -46.636637]
+        },
+        {
+            "addressCode": "40-500",
+            "addressName": "QMI - Brazil Division",
+            "location": [-23.603412, -46.636637]
+        }
+    ]
+}

@@ -26,6 +26,9 @@ app.angular
 
 		// Accept and process search input
 		$scope.processSearchRequest = function(e) {
+			console.log("Selected ship-from: " + $scope.shipFromDropDown.value());
+			console.log("Selected due date from: " + $scope.beginDueDatePicker.value());
+			console.log("Selected due date to: " + $scope.endDueDatePicker.value());
 			// TODO
-		}
-	}]);
+		};
+ 	}]);

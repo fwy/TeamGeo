@@ -10,6 +10,16 @@
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
     <link href="styles/main.css" rel="stylesheet" />
 
+    <!-- Additional KendoUI icons (see http://docs.telerik.com/kendo-ui/mobile/icons) -->
+    <style>
+        .km-globe:after, .km-globe:before {
+            content: "\e0db";
+        }
+        .km-list:after, .km-list:before {
+            content: "\e077";
+        }
+    </style>
+
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="http://kendo.cdn.telerik.com/2015.2.805/js/angular.min.js"></script>
@@ -45,7 +55,9 @@
 
         <kendo-mobile-footer>
             <kendo-mobile-tab-strip>
-                <a href="views/home.html" data-icon="home">Home</a>   
+                <a href="views/home.html" data-icon="home">Home</a>
+                <a href="views/map.html" data-icon="globe">Map</a>
+                <a href="views/orderList.html" data-icon="list">Order List</a>
             </kendo-mobile-tab-strip>
         </kendo-mobile-footer>
     </div>
