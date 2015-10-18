@@ -1,13 +1,14 @@
 <kendo-mobile-view 
     k-layout="'main'" 
-    k-on-init="init(kendoEvent)" 
+    k-on-init="initView(kendoEvent)" 
+    k-on-show="showView(kendoEvent)" 
     ng-controller="mapController" 
     style="position: relative;"
     >
     <h4 style="position: absolute; z-index: 10; color: #007aff; font-style: italic">{{title}}</h4>
 
     <kendo-map 
-        k-scope-field="testMap" 
+        k-scope-field="map" 
         k-layer-defaults = "layerDefaults"
         k-layers="layers" 
         k-on-reset="linkShipFromToPoints(kendoEvent)"

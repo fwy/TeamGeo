@@ -1,10 +1,11 @@
 <kendo-mobile-view 
     k-layout="'main'" 
+    k-on-show="showView(kendoEvent)"
     style="position: relative;"
     ng-controller="orderListController"
     >
-    <kendo-mobile-list-view id="shipToDetails"
-        k-data-source="dataSources.shipToDataSource"
+    <kendo-mobile-list-view
+        k-data-source="shipToDataSource"
         k-template="orderLineTemplate"
         >
     </kendo-mobile-list-view>

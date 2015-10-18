@@ -1,6 +1,16 @@
 app.angular
-	.controller("homeController", ["$scope", "dataSources", function($scope, dataSources) {
-		$scope.dataSources = dataSources;
+	.controller("homeController", ["$scope", "constants", "context", function($scope, constants, context) {
+		$scope.shipFromLocations = new kendo.data.DataSource({
+			transport: {
+				read: {
+					url: "data/shipFromLocations.json",
+					dataType: "json",
+				},
+			},
+			schema: {
+				data: "data",
+			},
+		});
 
 		// Set default low and high dates where there is order activity
 		$scope.lowDueDate = new Date(2015, 0, 1);
@@ -26,9 +36,12 @@ app.angular
 
 		// Accept and process search input
 		$scope.processSearchRequest = function(e) {
-			console.log("Selected ship-from: " + $scope.shipFromDropDown.value());
-			console.log("Selected due date from: " + $scope.beginDueDatePicker.value());
-			console.log("Selected due date to: " + $scope.endDueDatePicker.value());
-			// TODO
+			console.log("home: Selected ship-from: " + $scope.shipFromDropDown.value());
+			console.log("home: Selected due date from: " + $scope.beginDueDatePicker.value());
+			console.log("home: Selected due date to: " + $scope.endDueDatePicker.value());
+
+			// Set parameters for data retrieval
+			context.setShipFromToSelectors($scope.shipFromDropDown.value(),
+					$scope.beginDueDatePicker.value(), $scope.endDueDatePicker.value());
 		};
  	}]);
